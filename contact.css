@@ -1,0 +1,82 @@
+.navbar-list{   
+    margin-top: 30px;    
+    padding-left: 50px;
+    display: flex;   
+    list-style: none;
+    justify-content: center;
+    column-gap: 35px;
+    font-size: 23px;
+    font-family: 'Poppins', sans-serif;       
+}
+
+
+#forms{
+    font-size: 70px;
+    padding-left: 100px;
+    font-style: bold;
+}
+.contactform {
+    width: 800px;
+    height: 450px;
+    display: flex;
+    margin-left: 50px;
+    margin-top: 50px;
+    justify-content: center;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    flex-wrap: wrap;
+ }
+
+ .footer{
+    width: 100%;
+    height: 200px;
+    background-color:#DDDDDD;
+    margin-top: 100px;
+ }
+ 
+#fname{
+    margin-top: 40px;
+    margin-left: 45px;
+    height: 30px;
+    width: 300px;   
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid black;
+}
+#lname{
+    margin-left: 90px;
+    height: 30px;
+    width: 300px;   
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid black;
+}
+#emailid{
+    margin-top: 40px;
+    margin-left: 45px;
+    height: 30px;
+    width: 690px;   
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid black;
+}
+#message{
+    margin-top: 70px;
+    margin-left: 45px;
+    width: 700px;
+    /* border-top: none;
+    border-left: none;
+    border-right: none; */
+    border: 1px solid black;
+}
+.map{
+    height: 200px;
+    width: 200px;
+    padding-left:1050px;
+    margin-top: -410px;
+}

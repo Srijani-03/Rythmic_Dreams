@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@1000&display=swap');
+  *{
+    margin:0;
+    padding:0;
+    font-family:'Roboto',sans-serif;
+}
+.navbar-list{   
+    z-index: 1;
+    margin-top: 30px;    
+    padding-left: 20px;
+    display: flex;   
+    list-style: none;
+    justify-content: center;
+    column-gap: 35px;
+    font-size: 23px;
+    font-family: 'Poppins', sans-serif;       
+}
+.icon .icons{
+    font-size: 30px;
+    display: flex;
+    column-gap: 45px;
+    margin-left: 1200px;
+    margin-top: -25px;
+    color: #454545;
+
+  
+}
+.brand h1{
+    font-size:60px;
+    text-align: center;
+    margin-top: 20px;
+    font-family: poppins;
+}
+.brand h3{
+    font-size:25px;
+    text-align: center;
+    font-family: poppins;
+}
+.menq{
+    height: 150px;
+    width:100%;
+    background-color:#C19C8C;
+    margin-top: 50px;
+    z-index: -999;
+}
+.menq h1{
+    color:white;
+    font-size: 60px;
+    margin-left: 80px;
+    padding-top: 20px;
+
+}
+.menq h3{
+    color:white;
+    font-size: 25px;
+    margin-left: 80px;
+    margin-top: 10px;
+    
+}
+.searchbar{
+    width:500px;
+    height: 40px;
+background-color: #F7EFE5;
+
+    margin-left: 900px;
+    margin-top:25px;
+    z-index:-99;
+}
+.search{
+    width:60px;
+    height: 35px;
+    background-color:#C19C8C;
+    margin-left: 450px;
+    margin-top:-100px;
+  
+    border-radius: 0.2px;
+    border:solid;
+    border-color: #F7EFE5;
+  
+   }
+   .search i{
+    font-size: 25px;
+    color: white;
+    margin-left: 18px;
+    margin-top: 5px;
+
+   }
+
+.section-p1{
+    padding: 5px 0px;
+    padding-top: 25px;
+}
+/*SHOP CARD*/
+#product1 {
+    text-align: center;
+}
+#product1 .pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-left: 10PX;
+    padding-right: 10px;
+    flex-wrap: wrap;
+    margin-top: 0;
+    align-items: center;
+    margin-left: 50px;
+    margin-right: 50px;
+
+}
+#product1 .pro{
+    width:18%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    border: 1px solid #cce7d0;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 5px 5px 15px wheat;
+    margin: 15px 10px;
+    transition: 0.2s ease;
+    position: relative;
+
+ 
+}
+#product1 .pro:hover{
+    box-shadow: 10px 10px 100px #C19C8C;
+}
+#product1 .pro img{
+    width: 100%;
+    border-radius: 7px;
+    height: 300px;
+}
+
+.description{
+    text-align: start;
+    padding: 10px 0;
+}
+span{
+    color:#606063;
+    font-size: 12px;
+    text-align:start;
+}
+.description h4{
+    padding-top: 7px;
+    color:#1a1a1a;
+    font-size: 14px;
+}
+ .description h4{
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color:teal;
+}
+#product1 .pro .cart{
+    margin-left: 210px;
+    font-size: 30px;
+    margin-top: -30px;
+
+  
+
+}
+
+
+
+
+
+
+/*pagination*/ 
+
+#pagination{
+    text-align: center;
+    padding:40px 80px;
+}
+#pagination a{
+    text-decoration: none;
+    background-color: #C19C8C;
+    padding: 15px 20px;
+    border-radius: 4px;
+    color: black;
+    font-weight: 600;
+}
+ /* footer */
+
+ footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 0px;
+    padding-right: 0px;
+    height: 150px;
+    width: 100%;
+    background-color: #DDDDDD;
+    margin-top: 100px;
+    padding-top: 20px;
+    margin-right: -100px;
+    
+}
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    padding-left:20px;
+    padding-right: 20px;
+    }
+
+footer h4{
+    font-size: 14px;
+    padding-bottom: 15px;
+}
+footer p{
+    font-size: 13px;
+    margin: 0 0 8px 0;
+}
+footer a{
+    font-size: 13px;
+    text-decoration: none;
+    color: #222;
+    margin-bottom: 10px;
+}
+footer .follow{
+    margin-top: 5px;
+}
+footer .follow{
+    color:#465b52;
+    padding-right: 4px;
+    cursor:pointer;
+}
+.copyright{
+    margin-top: 40px;
+    margin-left: 500px;
+    margin-right: 100px;
+}
