@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    margin-left: 400px;
+    margin-top: 80px;
+  }
+  
+  .container1 {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+
+  
+  label,
+  input,
+  button {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] 
+  input[type="number"] {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+ 
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 50px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  
+  #message1 {
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+
+  
+
+  
+  .container2{
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: -350px;
+    margin-top: -500px;
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  .profile-container {
+    text-align: center;
+  }
+  
+  .profile {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 20px;
+  }
+  
+  .profile img {
+    width: 100%;
+    height: auto;
+  }
+  
+  input[type="file"] {
+    margin-left: 120px;
+  }
+  
+  #message2 {
+    margin-top: -30px;
+    text-align: center;
+    font-weight: bold;
+    margin-left: 100px;
+    
+  }
+
+  
+
+  
+
+  

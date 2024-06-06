@@ -5,6 +5,9 @@
     margin-right: 0;
     padding: 0;
 }
+a{
+    text-decoration: none;
+}
 body{
     background-color: rgb(255, 255, 255);
 }
@@ -22,6 +25,28 @@ body{
    padding-left: 400px;
     display: flex;
     column-gap: 45px;
+}
+#cart-icon{
+   padding-top: 5px; 
+}
+.dropdown_menu {
+    width: 150px;
+    height: fit-content;
+    background-color: #f7f5ec;
+border-radius: 10px;
+    margin-left: 1310px;
+    position: absolute;
+    z-index: 1;
+    display: none;
+    visibility: hidden;
+
+ 
+}
+.account{
+padding: 10px;
+border: 1px solid black ;
+
+
 }
 .upperframe{
     display: flex;
