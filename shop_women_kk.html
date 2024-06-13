@@ -26,16 +26,28 @@
     <li>
         <a href="contact.html" style="text-decoration: none; color:#00000074">Contact</a>
     </li>
+    <div class="icons">
+        <i class="fa-regular fa-user" id="cart-icon" style="cursor: pointer;" onclick="usericon()"></i>
+        <a href="ShopCart.html" style="color:black;"><i class="fa-solid fa-bag-shopping"></i></a>
+
+    </div>
 </ul>
-<div class="icon">
-    <ul class="icons">
 
-        <i class="fa-regular fa-user"></i>
-        <a href="ShopCart.html"> <i class="fa-solid fa-bag-shopping">
+<div class="dropdown_menu" id="dropdownMenu">
 
-            </i></a>
-        <i class="fa-solid fa-magnifying-glass"></i>
-</div>
+    <div class="account">
+        <a href="">Your Account</a>
+    </div>
+    <div class="account">
+        <a href="">Your Orders</a>
+    </div>
+    <div class="account">
+        <a href="">Wishlist</a>
+    </div>
+    <div class="account">
+        <a href="LogOut.php">Sign out</a>
+    </div>
+
 </div>
 <!--BRAND NAME-->
 
@@ -457,15 +469,33 @@
         });
     });
 
-</script>
 
-<script>
+// JS FOR ADD TO CART
+
     function saveDivData(divId) {
         const divContent = document.getElementById('content' + divId).innerHTML;
         localStorage.setItem('divContent' + divId, divContent);
         alert("Item has been added to Cart");
     }
-</script>
+
+// JS FOR USER ICON
+  
+    function usericon(){
+        console.log("hello");
+        var usermenu = document.getElementById("dropdownMenu");
+        if (usermenu.style.display==="none")
+            {
+                usermenu.style.display="block";
+                usermenu.style.visibility="visible";
+            }
+        else 
+        {
+            usermenu.style.display="none"
+            usermenu.style.visibility="hidden";
+        }
+    
+    }
+    </script>
 </body>
 
 </html>

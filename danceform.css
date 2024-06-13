@@ -34,7 +34,25 @@
     column-gap: 45px;
     padding-top: 10px;
 }
+.dropdown_menu {
+  width: 150px;
+  height: fit-content;
+  background-color: #f7f5ec;
+border-radius: 10px;
+  margin-left: 1310px;
+  position: absolute;
+  z-index: 1;
+  display: none;
+  visibility: hidden;
 
+
+}
+.account{
+padding: 10px;
+border: 1px solid black ;
+
+
+}
   .back-video{
     object-fit: cover;
     width: 100vw;

@@ -17,6 +17,7 @@
 
 </html>
 <!--NAVBAR-->
+
 <ul class="navbar-list">
     <a href="index.php" style="text-decoration: none; color:#00000074; ">Home</a>
     </li>
@@ -26,21 +27,36 @@
     <li>
         <a href="contact.html" style="text-decoration: none; color:#00000074">Contact</a>
     </li>
-</ul>
-    <div class="icon">
-        <ul class="icons">
-            <li><i class="fa-regular fa-user"></i></li>
-            <li><a href="ShopCart.html" style="color: black;"><i class="fa-solid fa-bag-shopping"></i></a></li>
-            <li><i class="fa-solid fa-magnifying-glass"></i></li>
-        </ul>
+    <div class="icons">
+        <i class="fa-regular fa-user" id="cart-icon" style="cursor: pointer;" onclick="usericon()"></i>
+        <a href="ShopCart.html" style="color:black;"><i class="fa-solid fa-bag-shopping"></i></a>
+
     </div>
+</ul>
+
+<div class="dropdown_menu" id="dropdownMenu">
+
+    <div class="account">
+        <a href="">Your Account</a>
+    </div>
+    <div class="account">
+        <a href="">Your Orders</a>
+    </div>
+    <div class="account">
+        <a href="">Wishlist</a>
+    </div>
+    <div class="account">
+        <a href="LogOut.php">Sign out</a>
+    </div>
+
 </div>
 <!--BRAND NAME-->
 
 <div class="brand">
     <h1>Rythmic Dreams</h1>
     <h3>A brand that showcases the beauty and spirituality of the classical dance form</h3>
-  
+</div>
+
 
 
 
@@ -48,14 +64,17 @@
 <div class="menq" style="background-color: #E1BC8F;">
     <h1> O D I S S I </h1>
     <h3>The art of grace and devotion</h3>
-    <div class="search-bar"><div class="searchbackground"></div>
-    <input type="text" id="productSearch" class="searchbar" placeholder="Search for a product..." > <i class="fa-solid fa-magnifying-glass" id="search-icon"></i></div>
-    
+    <div class="search-bar">
+        <div class="searchbackground"></div>
+        <input type="text" id="productSearch" class="searchbar" placeholder="Search for a product..."> <i
+            class="fa-solid fa-magnifying-glass" id="search-icon"></i>
+    </div>
 
-<!--SHOPPING CARDS-->
+
+    <!--SHOPPING CARDS-->
     <div class="first-row">
         <div class="pro">
-            <div  id="content129">
+            <div id="content129">
                 <img src="img/mp1.jpg" alt="" id="product-image">
                 <div class="description">
                     <span>lorem1</span>
@@ -67,26 +86,26 @@
                         <i class="fas fa-star"></i>
                     </div>
                     <h4>$50</h4>
-                 
+
                 </div>
             </div>
-                <button onclick="saveDivData(129)">Add to Cart</button>
+            <button onclick="saveDivData(129)">Add to Cart</button>
         </div>
 
         <div class="pro">
-        
-        <div  id="content130" >
-            <img src="img/mp2.jpg" alt="" id="product-image">
-            <div class="description">
-                <span>lorem1</span>
-                <h5>Lorem ipsum dolor sit amet. </h5>
-                <div class="star" style="color: rgb(243,181,25);">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <h4>$75</h4>
+
+            <div id="content130">
+                <img src="img/mp2.jpg" alt="" id="product-image">
+                <div class="description">
+                    <span>lorem1</span>
+                    <h5>Lorem ipsum dolor sit amet. </h5>
+                    <div class="star" style="color: rgb(243,181,25);">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$75</h4>
                 </div>
             </div>
             <button onclick="saveDivData(130)">Add to Cart</button>
@@ -94,37 +113,37 @@
 
 
         <div class="pro">
-          <div  id="content131">
-            <img src="img/mp3.jpg" alt="" id="product-image">
-            <div class="description">
-                <span>lorem1</span>
-                <h5>Lorem ipsum dolor sit amet. </h5>
-                <div class="star" style="color: rgb(243,181,25);">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
+            <div id="content131">
+                <img src="img/mp3.jpg" alt="" id="product-image">
+                <div class="description">
+                    <span>lorem1</span>
+                    <h5>Lorem ipsum dolor sit amet. </h5>
+                    <div class="star" style="color: rgb(243,181,25);">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$65</h4>
                 </div>
-                <h4>$65</h4>
             </div>
-           </div>
-           <button onclick="saveDivData(131)">Add to Cart</button>
+            <button onclick="saveDivData(131)">Add to Cart</button>
         </div>
 
 
         <div class="pro">
-            <div  id="content132">
-            <img src="img/mp4.jpg" alt="" id="product-image">
-            <div class="description">
-                <span>lorem1</span>
-                <h5>Lorem ipsum dolor sit amet. </h5>
-                <div class="star" style="color: rgb(243,181,25);">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <h4>$75</h4>            
+            <div id="content132">
+                <img src="img/mp4.jpg" alt="" id="product-image">
+                <div class="description">
+                    <span>lorem1</span>
+                    <h5>Lorem ipsum dolor sit amet. </h5>
+                    <div class="star" style="color: rgb(243,181,25);">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$75</h4>
                 </div>
             </div>
             <button onclick="saveDivData(132)">Add to Cart</button>
@@ -132,18 +151,18 @@
 
 
         <div class="pro">
-            <div  id="content133">
-            <img src="img/mp5.jpg" alt=""id="product-image">
-            <div class="description">
-                <span>lorem1</span>
-                <h5>Lorem ipsum dolor sit amet. </h5>
-                <div class="star" style="color: rgb(243,181,25);">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <h4>$50</h4>
+            <div id="content133">
+                <img src="img/mp5.jpg" alt="" id="product-image">
+                <div class="description">
+                    <span>lorem1</span>
+                    <h5>Lorem ipsum dolor sit amet. </h5>
+                    <div class="star" style="color: rgb(243,181,25);">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$50</h4>
                 </div>
             </div>
             <button onclick="saveDivData(133)">Add to Cart</button>
@@ -151,19 +170,19 @@
 
 
         <div class="pro">
-            <div  id="content134">
-            <img src="img/mp6.jpg" alt=""id="product-image">
-            <div class="description">
-                <span>lorem1</span>
-                <h5>Lorem ipsum dolor sit amet. </h5>
-                <div class="star" style="color: rgb(243,181,25);">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <h4>$50</h4>
-             
+            <div id="content134">
+                <img src="img/mp6.jpg" alt="" id="product-image">
+                <div class="description">
+                    <span>lorem1</span>
+                    <h5>Lorem ipsum dolor sit amet. </h5>
+                    <div class="star" style="color: rgb(243,181,25);">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$50</h4>
+
                 </div>
             </div>
             <button onclick="saveDivData(134)">Add to Cart</button>
@@ -171,19 +190,19 @@
 
 
         <div class="pro">
-            <div  id="content135">
-            <img src="img/mp7.jpg" alt=""id="product-image">
-            <div class="description">
-                <span>Lorem.</span>
-                <h5>Lorem ipsum dolor sit amet.</h5>
-                <div class="star" style="color: rgb(243,181,25);">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <h4>$45</h4>
-                
+            <div id="content135">
+                <img src="img/mp7.jpg" alt="" id="product-image">
+                <div class="description">
+                    <span>Lorem.</span>
+                    <h5>Lorem ipsum dolor sit amet.</h5>
+                    <div class="star" style="color: rgb(243,181,25);">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$45</h4>
+
                 </div>
             </div>
             <button onclick="saveDivData(135)">Add to Cart</button>
@@ -191,19 +210,18 @@
 
 
         <div class="pro">
-            <div  id="content136">
-            <img src="img/mp8.jpg" alt=""
-            id="product-image">
-            <div class="description">
-                <span>lorem1</span>
-                <h5>Lorem ipsum dolor sit amet. </h5>
-                <div class="star" style="color: rgb(243,181,25);">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <h4>$50</h4>
+            <div id="content136">
+                <img src="img/mp8.jpg" alt="" id="product-image">
+                <div class="description">
+                    <span>lorem1</span>
+                    <h5>Lorem ipsum dolor sit amet. </h5>
+                    <div class="star" style="color: rgb(243,181,25);">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$50</h4>
                 </div>
             </div>
             <button onclick="saveDivData(136)">Add to Cart</button>
@@ -213,38 +231,38 @@
 
     <div class="second-row">
         <div class="pro">
-            <div  id="content137">
-            <img src="img/mp9.jpg" alt=""id="product-image">
-            <div class="description">
-                <span>lorem1</span>
-                <h5>Lorem ipsum dolor sit amet. </h5>
-                <div class="star" style="color: rgb(243,181,25);">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
+            <div id="content137">
+                <img src="img/mp9.jpg" alt="" id="product-image">
+                <div class="description">
+                    <span>lorem1</span>
+                    <h5>Lorem ipsum dolor sit amet. </h5>
+                    <div class="star" style="color: rgb(243,181,25);">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$100</h4>
                 </div>
-                <h4>$100</h4>
-                </div>
-                
+
             </div>
             <button onclick="saveDivData(137)">Add to Cart</button>
         </div>
 
 
         <div class="pro">
-            <div  id="content138">
-            <img src="img/mp10.jpg" alt=""id="product-image">
-            <div class="description">
-                <span>lorem1</span>
-                <h5>Lorem ipsum dolor sit amet. </h5>
-                <div class="star" style="color: rgb(243,181,25);">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <h4>$150</h4>
+            <div id="content138">
+                <img src="img/mp10.jpg" alt="" id="product-image">
+                <div class="description">
+                    <span>lorem1</span>
+                    <h5>Lorem ipsum dolor sit amet. </h5>
+                    <div class="star" style="color: rgb(243,181,25);">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$150</h4>
                 </div>
             </div>
             <button onclick="saveDivData(138)">Add to Cart</button>
@@ -252,18 +270,18 @@
 
 
         <div class="pro">
-            <div  id="content139140141">
-            <img src="img/mp11.jpg" alt=""id="product-image">
-            <div class="description">
-                <span>lorem1</span>
-                <h5>Lorem ipsum dolor sit amet. </h5>
-                <div class="star" style="color: rgb(243,181,25);">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <h4>$125</h4>
+            <div id="content139140141">
+                <img src="img/mp11.jpg" alt="" id="product-image">
+                <div class="description">
+                    <span>lorem1</span>
+                    <h5>Lorem ipsum dolor sit amet. </h5>
+                    <div class="star" style="color: rgb(243,181,25);">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$125</h4>
                 </div>
             </div>
             <button onclick="saveDivData(139140141)">Add to Cart</button>
@@ -271,18 +289,18 @@
 
 
         <div class="pro">
-            <div  id="content140">
-            <img src="img/mp12.jpg" alt=""id="product-image">
-            <div class="description">
-                <span>lorem1</span>
-                <h5>Lorem ipsum dolor sit amet. </h5>
-                <div class="star" style="color: rgb(243,181,25);">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <h4>$250</h4>
+            <div id="content140">
+                <img src="img/mp12.jpg" alt="" id="product-image">
+                <div class="description">
+                    <span>lorem1</span>
+                    <h5>Lorem ipsum dolor sit amet. </h5>
+                    <div class="star" style="color: rgb(243,181,25);">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$250</h4>
                 </div>
             </div>
             <button onclick="saveDivData(140)">Add to Cart</button>
@@ -290,18 +308,18 @@
 
 
         <div class="pro">
-            <div  id="content141">
-            <img src="img/mp13.jpg" alt=""id="product-image">
-            <div class="description">
-                <span>lorem1</span>
-                <h5>Lorem ipsum dolor sit amet. </h5>
-                <div class="star" style="color: rgb(243,181,25);">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <h4>$150</h4>
+            <div id="content141">
+                <img src="img/mp13.jpg" alt="" id="product-image">
+                <div class="description">
+                    <span>lorem1</span>
+                    <h5>Lorem ipsum dolor sit amet. </h5>
+                    <div class="star" style="color: rgb(243,181,25);">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$150</h4>
                 </div>
             </div>
             <button onclick="saveDivData(141)">Add to Cart</button>
@@ -309,18 +327,18 @@
 
 
         <div class="pro">
-            <div  id="content142">
-            <img src="img/mp14.jpg" alt=""id="product-image">
-            <div class="description">
-                <span>lorem1</span>
-                <h5>Lorem ipsum dolor sit amet. </h5>
-                <div class="star" style="color: rgb(243,181,25);">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <h4>$187</h4>
+            <div id="content142">
+                <img src="img/mp14.jpg" alt="" id="product-image">
+                <div class="description">
+                    <span>lorem1</span>
+                    <h5>Lorem ipsum dolor sit amet. </h5>
+                    <div class="star" style="color: rgb(243,181,25);">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$187</h4>
                 </div>
             </div>
             <button onclick="saveDivData(142)">Add to Cart</button>
@@ -328,18 +346,18 @@
 
 
         <div class="pro">
-            <div  id="content143">
-            <img src="img/mp15.jpg" alt=""id="product-image">
-            <div class="description">
-                <span>lorem1</span>
-                <h5>Lorem ipsum dolor sit amet. </h5>
-                <div class="star" style="color: rgb(243,181,25);">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <h4>$80</h4>
+            <div id="content143">
+                <img src="img/mp15.jpg" alt="" id="product-image">
+                <div class="description">
+                    <span>lorem1</span>
+                    <h5>Lorem ipsum dolor sit amet. </h5>
+                    <div class="star" style="color: rgb(243,181,25);">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$80</h4>
                 </div>
             </div>
             <button onclick="saveDivData(143)">Add to Cart</button>
@@ -347,121 +365,137 @@
 
 
         <div class="pro">
-            <div  id="content144">
-            <img src="img/mp16.jpg" alt=""id="product-image">
-            <div class="description">
-                <span>lorem1</span>
-                <h5>Lorem ipsum dolor sit amet. </h5>
-                <div class="star" style="color: rgb(243,181,25);">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <h4>$250</h4>
+            <div id="content144">
+                <img src="img/mp16.jpg" alt="" id="product-image">
+                <div class="description">
+                    <span>lorem1</span>
+                    <h5>Lorem ipsum dolor sit amet. </h5>
+                    <div class="star" style="color: rgb(243,181,25);">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$250</h4>
                 </div>
             </div>
             <button onclick="saveDivData(144)">Add to Cart</button>
         </div>
     </div>
 
-<!--pagination-->
-</section>
-<section id="pagination" class="section-p1">
-    <a href="#" style="background-color: #E1BC8F;">1</a>
-    <a href="#" style="background-color: #E1BC8F;">2</a>
-    <a href="#" style="background-color: #E1BC8F;">
-        <i class="fa-solid fa-arrow-right"></i>
-    </a>
-</section>
+    <!--pagination-->
+    </section>
+    <section id="pagination" class="section-p1">
+        <a href="#" style="background-color: #E1BC8F;">1</a>
+        <a href="#" style="background-color: #E1BC8F;">2</a>
+        <a href="#" style="background-color: #E1BC8F;">
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+    </section>
 
 
-<!--FOOTER-->
-<footer class="section-p1">
-    <div class="col">
-        <img class="logo" src="img/logo.png" alt="">
-        <h4>Contact</h4>
-        <p><strong>Phone:</strong> +91 9433616483 , +91 8910219329</p>
-        <p><strong>Hours:</strong> 9am-9pm, Mon-Sat</p>
-        <div class="follow">
-            <h4>Follow us</h4>
-            <div class="icon">
-                <i class="fab fa-facebook"></i>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-youtube"></i>
-                <i class="fab fa-twitter"></i>
+    <!--FOOTER-->
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="img/logo.png" alt="">
+            <h4>Contact</h4>
+            <p><strong>Phone:</strong> +91 9433616483 , +91 8910219329</p>
+            <p><strong>Hours:</strong> 9am-9pm, Mon-Sat</p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-youtube"></i>
+                    <i class="fab fa-twitter"></i>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="col">
-        <h4>About</h4>
-        <a href="#">Delivery Information</a>
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms & Conditions</a>
-        <a href="#">Contact Us</a>
-    </div>
-
-    <div class="col">
-        <h4>My Account</h4>
-        <a href="#">Sign In</a>
-        <a href="#">View Cart</a>
-        <a href="#">My Wishlist</a>
-        <a href="#">Track My Order</a>
-        <a href="#">Help</a>
-    </div>
-    <div class="col">
-        <h4>About</h4>
-        <a href="#">Delivery Information</a>
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms & Conditions</a>
-        <a href="#">Contact Us</a>
-    </div>
-    <div class="col install">
-        <h4>Install App</h4>
-        <p>From App Store or Google Play</p>
-        <div class="row">
-            <img src="img/app.jpg" alt="">
-        </div>
-        <div class="row1">
-            <p>Secured Payment Gateways</p>
-            <img src="img/ATM Cards.png" alt="">
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Us</a>
         </div>
 
-    </div>
-    <div class="copyright">
-        <p> © 2023, Rythmic Dreams - HTML CSS E-COMMERCE COMPANY</p>
-    </div>
-</footer>
-</section>
-<!-- JS FOR SEARCH-BAR -->
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const searchInput = document.getElementById('productSearch');
-        const allProducts = document.querySelectorAll('.pro');
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+                <img src="img/app.jpg" alt="">
+            </div>
+            <div class="row1">
+                <p>Secured Payment Gateways</p>
+                <img src="img/ATM Cards.png" alt="">
+            </div>
 
-        searchInput.addEventListener('input', function () {
-            const searchText = this.value.trim().toLowerCase();
+        </div>
+        <div class="copyright">
+            <p> © 2023, Rythmic Dreams - HTML CSS E-COMMERCE COMPANY</p>
+        </div>
+    </footer>
+    </section>
+    <!-- JS FOR SEARCH-BAR -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const searchInput = document.getElementById('productSearch');
+            const allProducts = document.querySelectorAll('.pro');
 
-            allProducts.forEach(product => {
-                const productName = product.querySelector('#product-heading').textContent.trim().toLowerCase();
-                if (productName.includes(searchText)) {
-                    product.style.display = 'block';
-                } else {
-                    product.style.display = 'none';
-                }
+            searchInput.addEventListener('input', function () {
+                const searchText = this.value.trim().toLowerCase();
+
+                allProducts.forEach(product => {
+                    const productName = product.querySelector('#product-heading').textContent.trim().toLowerCase();
+                    if (productName.includes(searchText)) {
+                        product.style.display = 'block';
+                    } else {
+                        product.style.display = 'none';
+                    }
+                });
             });
         });
-    });
 
-</script>
 
-<!-- JS FOR ADD TO CART -->
-<script>
-    function saveDivData(divId) {
-        const divContent = document.getElementById('content' + divId).innerHTML;
-        localStorage.setItem('divContent' + divId, divContent);
-        alert("Item has been added to Cart");
-    }
-</script>
-</body>
-</html>
+        // JS FOR ADD TO CART
+
+        function saveDivData(divId) {
+            const divContent = document.getElementById('content' + divId).innerHTML;
+            localStorage.setItem('divContent' + divId, divContent);
+            alert("Item has been added to Cart");
+        }
+
+        // JS FOR USER ICON
+
+        function usericon() {
+            console.log("hello");
+            var usermenu = document.getElementById("dropdownMenu");
+            if (usermenu.style.display === "none") {
+                usermenu.style.display = "block";
+                usermenu.style.visibility = "visible";
+            }
+            else {
+                usermenu.style.display = "none"
+                usermenu.style.visibility = "hidden";
+            }
+
+        }
+    </script>
+    </body>
+
+    </html>

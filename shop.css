@@ -10,9 +10,9 @@ body{
     overflow-x: hidden;
 }
 .navbar-list{   
-    z-index: 1;
+
     margin-top: 30px;    
-    padding-left: 20px;
+    padding-left: 550px;
     display: flex;   
     list-style: none;
     justify-content: center;
@@ -20,7 +20,7 @@ body{
     font-size: 23px;
     font-family: 'Poppins', sans-serif;       
 }
-.icon .icons{
+/* .icon .icons{
     font-size: 30px;
     display: flex;
     column-gap: 45px;
@@ -29,7 +29,34 @@ body{
     color: #454545;
 
   
-}
+} */
+.navbar-list .icons{
+    padding-left: 400px;
+     display: flex;
+     column-gap: 45px;
+ }
+ #cart-icon{
+    padding-top: 5px; 
+ }
+ .dropdown_menu {
+     width: 150px;
+     height: fit-content;
+     background-color: #f7f5ec;
+ border-radius: 10px;
+     margin-left: 1310px;
+     position: absolute;
+     z-index: 1;
+     display: none;
+     visibility: hidden;
+ 
+  
+ }
+ .account{
+ padding: 10px;
+ border: 1px solid black ;
+ 
+ 
+ }
 .brand h1{
     font-size:60px;
     text-align: center;
@@ -245,9 +272,6 @@ margin-top: 50px;
 margin-left: 45%;
 font-size: 30px;
 }
-
-
-
 
 
 /*pagination*/ 

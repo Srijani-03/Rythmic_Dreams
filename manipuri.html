@@ -12,7 +12,6 @@
 <body>
 
 
-
     <ul class="navbar-list">       
         <a href="index.php" style="text-decoration: none; color:#000000; ">Home</a>
       </li>       
@@ -23,13 +22,30 @@
         <a  href="contact.html" style="text-decoration: none; color:#000000" >Contact</a>
       </li>
 
-      <div class="icons">
-      <i class="fa-regular fa-user"></i>        
-      <i class="fa-solid fa-bag-shopping"></i>
-      <i class="fa-solid fa-magnifying-glass"></i>
-  </div>
-  </ul>
+   
+  <div class="icons">
+    <i class="fa-regular fa-user" id="cart-icon" style="cursor: pointer;" onclick="usericon()"></i>
+    <a href="ShopCart.html" style="color:black;"><i class="fa-solid fa-bag-shopping"></i></a>
 
+   </div>
+ </ul>
+
+ <div class="dropdown_menu" id="dropdownMenu">
+
+     <div class="account">
+       <a href="">Your Account</a>
+     </div>
+     <div class="account">
+       <a href="">Your Orders</a>
+     </div>
+     <div class="account">
+       <a href="">Wishlist</a>
+     </div>
+     <div class="account">
+       <a href="LogOut.php">Sign out</a>
+     </div>
+ 
+ </div>
 
 <div class="heroo">
     <video autoplay loop muted plays-inline class="back-video">
@@ -65,10 +81,27 @@
 <div id="mumb" >
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, quia.</div>
 
-<script src="culture.js"></script>
 
 
 
+<script>
+  
+    function usericon(){
+        console.log("hello");
+        var usermenu = document.getElementById("dropdownMenu");
+        if (usermenu.style.display==="none")
+            {
+                usermenu.style.display="block";
+                usermenu.style.visibility="visible";
+            }
+        else 
+        {
+            usermenu.style.display="none"
+            usermenu.style.visibility="hidden";
+        }
+    
+    }
+    </script>
 
 
 
